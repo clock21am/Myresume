@@ -1,0 +1,371 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Rajdeep Resume
+%% <https://github.com/clock21am/Myresume.git>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TeX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \documentclass[a4paper,10pt,oneside]{article}
+\documentclass[letterpaper,10pt,oneside]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TYPESETTING OPTIONS.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\TypesetInNonStopMode}{1}
+\newcommand{\TypesetInDraftMode}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{CV-Preamble.tex}
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Rajdeep Kaur}
+\newcommand{\CVTitle}{John Doe's CV for Acme Corporation}
+\newcommand{\CVNote}{CV compiled on {\today} for Acme Corporation}
+%%\newcommand{\CVWebpage}{http://www.example.com/johndoe}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{\CVAuthor}
+
+\begin{subtitle}
+\href{https://www.google.co.in/maps/place/National+Institute+of+Technology/@23.550853,87.2882393,17z/data=!4m5!3m4!1s0x39f772081cede5e9:0x33fb9ccb243dfa5!8m2!3d23.550853!4d87.290428}
+{National Institute of Technology durgapur, West Bengal, India}
+\par
+\href{mailto:rajdeep.kaur2009@gmail.com}
+{rajdeep.kaur@kde.org}
+\,\SubBulletSymbol\,
++91\,8609344682
+\,\SubBulletSymbol\,
++91\,8670820332
+\,\SubBulletSymbol\,
+
+\end{subtitle}
+
+\begin{body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section
+{Education}
+{Education}
+{PDF:Education}
+
+{\textbf{ B.Tech in Computer Science and Engineering, Senior Year}}
+\hfill
+\DatestampYMD{2013}{07}{15} --
+\DatestampYMD{2017}{05}{15}
+\GapNoBreak
+\href{http://www.nitdgp.ac.in/}
+{\textbf{ National Institute of Technology Durgapur, West Bengal, India}},
+
+
+\GapNoBreak
+\BulletItem
+C.G.P.A of  7.12/10 
+\begin{detail}
+\end{detail}
+
+\GapNoBreak
+\begin{detail}
+\end{detail}
+
+\BigGap
+\href{}
+{\textbf{Kendriya Vidyalaya Sarni}},
+Madhya Pradesh, India
+
+\GapNoBreak
+\BulletItem
+High School
+\hfill
+\DatestampYMD{2010}{05}{15} --
+\DatestampYMD{2012}{05}{15}
+\begin{detail}
+\SubBulletItem
+Cumulative GPA: 9.00 / 10.00
+\GapNoBreak
+
+\BulletItem
+Secondry School
+\hfill
+\DatestampYMD{2010}{04}{15} --
+\DatestampYMD{2000}{05}{15}
+\begin{detail}
+\SubBulletItem
+Cumulative GPA: 9.00 / 10.00
+
+\end{detail}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Research Experience}
+{Research Experience}
+{}
+
+{\textbf{Fuzzy logic on Genetic Algorithms}},
+NIT Durgapur
+
+\GapNoBreak
+\BulletItem
+Undergraduate Research Student, Computer Science Department
+\hfill
+\DatestampYMD{2016}{03}{15} --
+\DatestampYMD{2017}{05}{15}
+\begin{detail}
+\SubBulletItem
+Project:
+Fuzzy logic on Genetic Algorithms
+\SubBulletItem
+Supervisors:
+Professor Tandra Pal
+\SubBulletItem
+Research areas:
+Artificial Intelligence, Java Programming, C++.
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%
+%% Work Experience %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Work Experience}
+{Work Experience}
+{}
+\href{https://summerofcode.withgoogle.com/projects/#4970588472868864}
+{\textbf{Google Summer of Code, Intern}}
+\hfill
+\DatestampYMD{2016}{04}{22} --
+\DatestampYMD{2016}{08}{29}
+\GapNoBreak
+\begin{detail}
+\SubBulletItem
+Project:
+GCompris, An education Suit in under KDE
+\SubBulletItem
+Supervisors:
+Johnny Jazeix
+\SubBulletItem
+Language and FrameWork used:
+C++, Github, Git, Qt, Qml, Javascript, Json, Xml, Cmake
+\GapNoBreak
+\GapNoBreak
+\GapNoBreak
+
+\href{https://season.kde.org/?q=view_projects&prg=36&p=511#}
+{\textbf{Season of KDE}}
+\hfill
+\DatestampYMD{2015}{10}{22} --
+\DatestampYMD{2016}{03}{29}
+\SubBulletItem
+Project:
+GCompris, An education Suit in under KDE
+\SubBulletItem
+Supervisors:
+Bruno Coudion
+\SubBulletItem
+Language and FrameWork used:
+C++, Github, Git, Qt, Qml, Javascript, Json, Xml, Cmake, KDE Git
+
+\GapNoBreak
+\GapNoBreak
+\GapNoBreak
+
+{\textbf{Web designing Intern}}, at WebTech academy in Nerul Mumbai
+\hfill
+\DatestampYMD{2014}{05}{22} --
+\DatestampYMD{2014}{07}{29}
+\SubBulletItem
+Project:
+Designed Websites for Startup's
+\SubBulletItem
+Language and FrameWork used:
+Html, Css, Jquery, Javascript 
+
+
+\end{detail}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%% ACADEMIC AWARDS %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Technical Skills}
+{Technical Skills}
+{}
+
+\BulletItem
+{\textbf{Languages:} C++, C, Java, Qt , Go lang , JavaScript , Html, Css ,  Json, Qml, Json, SQL}
+\Gap
+\BulletItem
+{\textbf{Framework, APIs Explored:} NodeJs, Google Maps}
+\GapNoBreak
+\BulletItem
+{\textbf{Version Controlled:} Git, Gerrit }
+\GapNoBreak
+\BulletItem
+{\textbf{Platform:} Windows, GNU/Linux }
+
+\begin{detail}
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%
+%% OTHER AWARDS %%
+%%%%%%%%%%%%%%%%%%
+
+\section
+{Relevant Courses}
+{Relevant Courses}
+{}
+
+Data Structures and Algorithms, Artificial Intelligence,  Database Management System, Operating System, Object Oriented Programming, Theory of Automata, Network Programming, Software Engineering
+\begin{detail}
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROFESSIONAL AFFILIATIONS & ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{PROJECTS}
+{PROJECTS}
+{}
+\BulletItem
+\href{https://github.com/clock21am/AutoLogout}
+{\textbf{AutoLogut}},
+A chrome extension that automagically logs you out from facebook, twitter and quora after 10 minutes.
+\GapNoBreak
+\BulletItem
+\href{https://www.mediawiki.org/wiki/Developer_access} {\textbf{Pywikibot}  Pywikibot is a Python library and collection of tools that automate work on MediaWiki sites.}
+\GapNoBreak
+\BulletItem
+\href{https://github.com/bdoin/GCompris-qt/commits?author=clock21am}
+{\textbf{The classical Hangman} Implemented a wordguessing game in Qt, Qml, JavaScript.}
+\GapNoBreak
+\BulletItem
+\href{https://quickgit.kde.org/?p=gcompris.git&a=shortlog&h=a92e04f1faaa47154584e4a0f408684f12a69c06}
+{\textbf{Parachute landing} Implemented a game to land tux on a boat based on Qt, Qml and Javascript.}
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Achievements and Awards}
+{Achievements and Awards}
+{}
+
+\BulletItem
+{\textbf{Got Selected in Google Summer of Code}}
+\GapNoBreak
+\BulletItem
+{\textbf{Got Selected in Season of KDE}}
+\GapNoBreak
+\BulletItem
+{\textbf{Ranked 3 in Green Olympiad in my School}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{POSITIONS OF
+RESPONSIBILITY}
+{POSITIONS OF
+RESPONSIBILITY}
+{}
+
+\BulletItem
+{Junior fest coordinator at Darpan}
+\GapNoBreak
+\BulletItem
+{Core member at offical Dramatics club of NIT durgapur}
+\GapNoBreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{CONTACT DETAILS}
+{CONTACT DETAILS}
+{}
+\BulletItem
+\href{https://www.linkedin.com/in/rajdeep-kaur-51a731b5?trk=nav_responsive_tab_profile_pic}
+{\textbf{Linkedin}}
+\GapNoBreak
+\BulletItem
+\href{https://rajdeep5.wordpress.com/}
+{\textbf{Blog site}}
+\GapNoBreak
+\BulletItem
+\href{https://github.com/clock21am}
+{\textbf{Github}}
+
+
+\end{body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+\label{LastPage}~
+\end{document}
